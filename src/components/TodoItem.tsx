@@ -7,7 +7,7 @@ interface TodoItemProps {
 export default function TodoItem({todoExtract}: TodoItemProps){
     return(
         <div>
-            <label>
+            <label className="flex items-center gap-2 border rounded-md p-2 border-gray-400 bg-white hover:bg-slate-200">
                 <input 
                 type="checkbox"
                 className="scale-125"

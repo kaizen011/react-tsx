@@ -1,4 +1,4 @@
-import { Todo } from "../types/todos";
+import { Todo } from "../types/todo";
 
 export const dummyData : Todo[] = [
     {
@@ -14,6 +14,6 @@ export const dummyData : Todo[] = [
     {
         id:3,
         title: "Leave a nice comment 😁",
-        completed: false,
+        completed: true,
     },
 ];

@@ -12,7 +12,7 @@ export default function TodoItem({todoExtract, onCompletedChange}: TodoItemProps
                 <input 
                 type="checkbox"
                 checked={todoExtract.completed}
-                onChange={(e) => onCompletedChange(todoExtract.id, e.target.checked)}
+                onChange={(event) => onCompletedChange(todoExtract.id, event.target.checked)}
                 className="scale-125"
                 />
                 <span className={todoExtract.completed ? "line-through text-gray-400" : ""}>

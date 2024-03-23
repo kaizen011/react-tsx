@@ -1,10 +1,10 @@
 import { Todo } from "../types/todo"
 
 interface TodoItemProps {
-    todo: Todo;
+    todoExtract: Todo;
 }
 
-export default function TodoItem({todo}: TodoItemProps){
+export default function TodoItem({todoExtract}: TodoItemProps){
     return(
         <div>
             <label>
@@ -12,8 +12,8 @@ export default function TodoItem({todo}: TodoItemProps){
                 type="checkbox"
                 className="scale-125"
                 />
-                <span className={todo.completed ? "line-through text-gray-400" : ""}>
-                    {todo.title}
+                <span className={todoExtract.completed ? "line-through text-gray-400" : ""}>
+                    {todoExtract.title}
                 </span>
             </label>
         </div>

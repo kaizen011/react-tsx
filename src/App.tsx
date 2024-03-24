@@ -7,8 +7,8 @@ function App() {
 
 
   function setTodoCompleted(id:number, completed:boolean){
-    setTodos((todos) => 
-    todos.map(todo => ( todo.id === id ? {...todo, completed} : todo ))
+    setTodos((prevTodos) => 
+    prevTodos.map(prevTodo => ( prevTodo.id === id ? {...prevTodo, completed} : prevTodo ))
     );
   }
 

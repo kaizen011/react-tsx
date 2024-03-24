@@ -21,7 +21,9 @@ function App() {
             <TodoItem
             key={todo.id} 
             todoExtract={todo}
-            onCompletedChange={setTodoCompleted}/>
+            onCompletedChange={setTodoCompleted}
+            id={todo.id}
+            />
           ))}
         </div>
       </div>

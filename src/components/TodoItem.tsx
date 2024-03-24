@@ -3,7 +3,7 @@ import { Todo } from "../types/todo"
 interface TodoItemProps {
     todoExtract: Todo;
     onCompletedChange : (id: number, completed: boolean) => void;
-    id : number
+    id : number;
 }
 
 export default function TodoItem({todoExtract, onCompletedChange, id}: TodoItemProps){

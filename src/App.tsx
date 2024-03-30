@@ -6,7 +6,7 @@ import AddTodoForm from "./components/AddTodoForm";
 function App() {
   const [todos, setTodos] = useState(dummyData);
 
-
+  
   function setTodoCompleted(id:number, completed:boolean){
     setTodos((prevTodos) => 
     prevTodos.map(prevTodo => ( prevTodo.id === id ? {...prevTodo, completed} : prevTodo ))

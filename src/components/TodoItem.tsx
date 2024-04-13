@@ -3,19 +3,19 @@ import { Todo } from "../types/todo"
 
 interface TodoItemProps {
     todoExtract: Todo;
-    onCompletedChange : (id: number, completed: boolean) => void;
+    childOnCompleted : (id: number, completed: boolean) => void;
     id : number;
     onDelete: (id: number) => void;
 }
 
-export default function TodoItem({todoExtract, onCompletedChange, id, onDelete}: TodoItemProps){
+export default function TodoItem({todoExtract, childOnCompleted, id, onDelete}: TodoItemProps){
     return(
         <div className="flex items-center gap-1">
             <label className="flex items-center gap-3 border-3 rounded-md p-2 border-gray-400 bg-slate-400 hover:bg-slate-200 grow">
                 <input 
                 type="checkbox"
                 checked={todoExtract.completed}
-                onChange={(event) => onCompletedChange(todoExtract.id, event.target.checked)}
+                onChange={(event) => childOnCompleted(todoExtract.id, event.target.checked)}
                 className="scale-125"
                 /> 
                 <span className={todoExtract.completed ? "line-through text-gray-600" : ""}>

@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 interface AddTodoFormProps {
-    onSubmit : (title: string) => void;
+    onSubmit : (titleExtract: string) => void;
 }
 
 export default function AddTodoForm({onSubmit} : AddTodoFormProps){

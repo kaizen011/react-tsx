@@ -27,6 +27,7 @@ onDelete
           todoExtract={todo}
           onCompletedChange={onCompletedChange}
           id={todo.id}
+          onDelete={onDelete}
           />
         ))}
       </div>

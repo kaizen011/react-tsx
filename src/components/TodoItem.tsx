@@ -11,7 +11,7 @@ interface TodoItemProps {
 export default function TodoItem({todoExtract, childOnCompleted, id, onDelete}: TodoItemProps){
     return(
         <div className="flex items-center gap-1">
-            <label className="flex items-center gap-3 border-3 rounded-md p-2 border-gray-400 bg-slate-400 hover:bg-slate-200 grow">
+            <label className="flex items-center gap-3 border-3 rounded-md p-2 border-gray-400 bg-slate-400 hover:bg-slate-300 grow">
                 <input 
                 type="checkbox"
                 checked={todoExtract.completed}

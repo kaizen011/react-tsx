@@ -16,7 +16,7 @@ onDelete
         if(a.completed === b.completed){
             return b.id - a.id;
         }
-        return a.completed ? 1 : -1
+        return a.completed ? 1 : -1;
     });
 
     return(
